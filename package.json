@@ -9,7 +9,8 @@
   "scripts": {
     "start": "babel-node ./node_modules/.bin/webpack",
     "poststart": "cp ./src/index.html ./dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "aws s3 sync dist/ s3://www.danieledamiani.com/dashboard"
   },
   "repository": {
     "type": "git",
