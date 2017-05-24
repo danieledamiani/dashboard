@@ -11,7 +11,7 @@ export default {
   entry: path.resolve(__dirname, 'src/index'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: './',
+    publicPath: '/',
     filename: 'bundle.js'
   },
   plugins: [
